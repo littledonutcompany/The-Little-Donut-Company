@@ -25,16 +25,17 @@ body {
 }
 
 .wrapper {
-    width: 500px;
-    height:400px;
+    width: 400px;
+    height:300px;
     position:absolute;
     left:50%;
     top:50%;
-    margin:-200px 0 0 -250px;
+    margin:-150px 0 0 -200px;
     /**border: 1px dotted white;**/
 }
     .wrapper img {
         padding-top: 10px;
+        width: 80%;
     }
 
 
