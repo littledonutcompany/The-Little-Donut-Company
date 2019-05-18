@@ -1,7 +1,7 @@
 html{
     height: 100vh;    
     background: #ffc101;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 
     /* Old browsers */
     background: -moz-linear-gradient(top, #ffc101 0%, #f7d776 100%);
@@ -14,7 +14,6 @@ html{
 }
 
 body {
-    height: 100%;
     text-align: center;
     background-image: url("../img/rings.png");
     background-position: left -60px bottom -60px;
@@ -37,11 +36,24 @@ body {
         padding-top: 10px;
         width:60%;
     }
+    .wrapper a {
+        color: white;
+    }
+    .wrapper .icons i {
+        font-size: 2em;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        transition: all .2s ease-in-out;
+    }
+        .wrapper .icons i:hover {
+            transform: scale(1.1);
+        }
 
 
 h1 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #fff;
   font-size: 1.5em;
 }
 
