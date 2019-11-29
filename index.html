@@ -1,32 +1,115 @@
-<!doctype html>
+html{
+    height: 115vh;    
+    background: #ffc101;
+    font-family: 'Source Sans Pro', sans-serif;
 
-<html lang="en">
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffc101 0%, #f7d776 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffc101 0%, #f7d776 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffc101 0%, #f7d776 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc101', endColorstr='#f7d776', GradientType=0);
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Little Donut Company</title>
-  <meta name="description" content="We provide fresh, hot donuts for your event.">
-  <meta name="author" content="Matthew Williams">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+body {
+    text-align: center;
+    background-image: url("../img/rings.png");
+    background-position: left -60px bottom -60px;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    margin: 0;
+    padding: 0;
+}
 
-<body>
-    <div class="wrapper">
-        <img src="img/logo.png" alt="The Little Donut Company Logo">
-        <br>
-        <h1>
-            Stay Tuned!
-        </h1>
-        <div class="icons">
-          <a href="https://www.instagram.com/thelittledonutcompany/" target=”_blank”><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/thelittledonutco/" target=”_blank”><i class="fab fa-facebook-square"></i></a>
-          <a href="https://twitter.com/littledonutcoUK" target=”_blank”><i class="fab fa-twitter-square"></i></a>
-        </div>
-    </div>
+.wrapper {
+    width: 400px;
+    height:700px;
+    position:absolute;
+    left:50%;
+    top:25%;
+    margin:-150px 0 0 -200px;
+    /**border: 1px dotted white;**/
+}
+    .wrapper img {
+        padding-top: 10px;
+        width:60%;
+    }
+    .wrapper a {
+        color: white;
+    }
+    .wrapper .icons i {
+        font-size: 2em;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        transition: all .15s ease-in-out;
+    }
+        .wrapper .icons i:hover {
+            transform: scale(1.1);
+        }
 
-  <!-- Start of Scripts -->  
-</body>
-</html>
+
+h1 {  
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #fff;
+  font-size: 1em;
+  margin: 1em 0 0.5em 0;
+  padding-left: 1em;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  text-align: justify;
+}
+
+.input-text {
+  border-radius: 5px;
+  border-style: none;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0.5em 1em;
+  width: 350px;
+}
+
+.button-submit {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #444;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em auto 0.5em auto;
+  outline: none;
+  padding: 0.5em 1em;
+  transition: all .15s ease-in-out;
+  text-shadow: 0 0.5px 3px rgba(12, 12, 12, 0.25);
+}
+  .button-submit:hover {
+      transform: scale(1.05);
+  }
+  .button-submit:active {
+    position: relative;
+    top: 1px;
+  }
+
+.form-message {
+  height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper img {
+        width:100%;
+    }
+  }
