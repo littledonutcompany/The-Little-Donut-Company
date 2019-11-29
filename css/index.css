@@ -66,6 +66,10 @@ h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+textarea {
+  resize: none;
+}
+
 .message {
   margin-bottom: 1.5em;
   padding-left: 0;
