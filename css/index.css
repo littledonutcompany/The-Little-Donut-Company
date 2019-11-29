@@ -1,5 +1,5 @@
 html{
-    height: 100vh;    
+    height: 115vh;    
     background: #ffc101;
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -25,10 +25,10 @@ body {
 
 .wrapper {
     width: 400px;
-    height:300px;
+    height:700px;
     position:absolute;
     left:50%;
-    top:50%;
+    top:25%;
     margin:-150px 0 0 -200px;
     /**border: 1px dotted white;**/
 }
@@ -44,17 +44,68 @@ body {
         padding-left: 4px;
         padding-right: 4px;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-        transition: all .2s ease-in-out;
+        transition: all .15s ease-in-out;
     }
         .wrapper .icons i:hover {
             transform: scale(1.1);
         }
 
 
-h1 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+h1 {  
   color: #fff;
   font-size: 1.5em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #fff;
+  font-size: 1em;
+  margin: 1em 0 0.5em 0;
+  padding-left: 1em;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  text-align: justify;
+}
+
+.input-text {
+  border-radius: 5px;
+  border-style: none;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0.5em 1em;
+  width: 350px;
+}
+
+.button-submit {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #444;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em auto 0.5em auto;
+  outline: none;
+  padding: 0.5em 1em;
+  transition: all .15s ease-in-out;
+  text-shadow: 0 0.5px 3px rgba(12, 12, 12, 0.25);
+}
+  .button-submit:hover {
+      transform: scale(1.05);
+  }
+  .button-submit:active {
+    position: relative;
+    top: 1px;
+  }
+
+.form-message {
+  height: 150px;
 }
 
 @media only screen and (min-width: 768px) {
